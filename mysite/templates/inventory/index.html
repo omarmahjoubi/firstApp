@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Items in stock</h2>
+<ul>
+{% for item in items %}
+    <li>
+        <a href="{% url 'item_detail' item.id %}"> <!-- url genere le lien correspendant a l'url qui a comme argument name item_detail -->
+            {{ item.title | capfirst }}
+        </a>
+    </li>
+{% endfor %}
+</ul>
+{% endblock %}

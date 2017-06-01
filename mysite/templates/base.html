@@ -1,0 +1,17 @@
+{% load staticfiles %} <!-- load the static file -->
+
+<!doctype html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <title>Inventory</title>
+        <link rel="stylesheet" href="{% static 'main.css' %}" >
+    </head>
+
+    <body>
+        {% block content %}  <!-- wher the code of html file that extends this html file will be displayes -->
+        {% endblock content %}
+        <script src="{% static 'main.js' %}"></script>
+    </body>
+</html>
