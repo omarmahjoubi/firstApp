@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'inventory',
+    'authentification',
 ]
 
 MIDDLEWARE_CLASSES = [
@@ -52,6 +53,8 @@ MIDDLEWARE_CLASSES = [
 ]
 
 ROOT_URLCONF = 'mysite.urls'
+
+
 
 TEMPLATES = [
     {
